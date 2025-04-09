@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dịch vụ vệ sinh công nghiệp - Thái Bình Thịnh Vượng</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; }
-    header { background: #00539C; color: white; padding: 20px 40px; text-align: center; }
-    nav ul { list-style: none; padding: 0; text-align: center; background: #003865; margin: 0; }
-    nav ul li { display: inline-block; }
-    nav ul li a { color: white; padding: 15px 20px; display: inline-block; text-decoration: none; }
-    nav ul li a:hover { background: #0074D9; }
-    .container { padding: 40px 20px; max-width: 1200px; margin: auto; background: white; }
-    .intro, .services, .contact { margin-bottom: 40px; }
-    h2 { color: #00539C; }
-    .service-box { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 8px; background: #f2f2f2; }
-    footer { background: #003865; color: white; text-align: center; padding: 20px; }
-    .button { display: inline-block; background: #00539C; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; }
-    .button:hover { background: #003865; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vscnGPC</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>CÔNG TY TNHH THÁI BÌNH THỊNH VƯỢNG</h1>
-    <p>Dịch vụ vệ sinh công nghiệp chuyên nghiệp, uy tín và tận tâm</p>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <h1 class="text-2xl font-bold">vscnGPC</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#gioithieu" class="hover:text-yellow-300">Giới thiệu</a>
+        <a href="#dichvu" class="hover:text-yellow-300">Dịch vụ</a>
+        <a href="#lienhe" class="hover:text-yellow-300">Liên hệ</a>
+      </nav>
+    </div>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#gioithieu">Giới thiệu</a></li>
-      <li><a href="#dichvu">Dịch vụ</a></li>
-      <li><a href="#lienhe">Liên hệ</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <section id="gioithieu" class="intro">
-      <h2>Giới thiệu</h2>
-      <p>Với nhiều năm kinh nghiệm trong ngành vệ sinh công nghiệp, chúng tôi cung cấp các giải pháp làm sạch toàn diện cho nhà xưởng, văn phòng, nhà ở,... đảm bảo môi trường sạch sẽ và chuyên nghiệp.</p>
-    </section>
-    <section id="dichvu" class="services">
-      <h2>Dịch vụ của chúng tôi</h2>
-      <div class="service-box">
-        <h3>Vệ sinh nhà xưởng</h3>
-        <p>Dọn dẹp, hút bụi, lau sàn, khử trùng khu vực sản xuất, hành lang, văn phòng trong nhà máy.</p>
+
+  <!-- Hero section -->
+  <section class="bg-cover bg-center h-96 flex items-center justify-center text-white" style="background-image: url('https://source.unsplash.com/featured/?healthcare');">
+    <div class="text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Chăm sóc sức khỏe tại nhà</h2>
+      <p class="text-lg md:text-xl">Dành cho người lớn tuổi và gia đình bận rộn</p>
+    </div>
+  </section>
+
+  <!-- Giới thiệu -->
+  <section id="gioithieu" class="max-w-5xl mx-auto py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Về chúng tôi</h2>
+    <p class="text-lg text-center">vscnGPC cung cấp dịch vụ chăm sóc sức khỏe và nấu ăn tại nhà với đội ngũ chuyên nghiệp, tận tâm và giàu kinh nghiệm.</p>
+  </section>
+
+  <!-- Dịch vụ -->
+  <section id="dichvu" class="bg-gray-100 py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Dịch vụ của chúng tôi</h2>
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <img src="https://source.unsplash.com/300x200/?nurse" alt="Chăm sóc" class="rounded mb-4 mx-auto">
+          <h3 class="text-xl font-semibold mb-2">Chăm sóc sức khỏe</h3>
+          <p>Hỗ trợ kiểm tra sức khỏe, theo dõi tình trạng và tư vấn định kỳ tại nhà.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <img src="https://source.unsplash.com/300x200/?food" alt="Nấu ăn" class="rounded mb-4 mx-auto">
+          <h3 class="text-xl font-semibold mb-2">Nấu ăn dinh dưỡng</h3>
+          <p>Chế biến món ăn đảm bảo dinh dưỡng, an toàn vệ sinh và phù hợp từng đối tượng.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <img src="https://source.unsplash.com/300x200/?elderly" alt="Người cao tuổi" class="rounded mb-4 mx-auto">
+          <h3 class="text-xl font-semibold mb-2">Chăm sóc người cao tuổi</h3>
+          <p>Giúp đỡ sinh hoạt hàng ngày, tạo không gian sống vui vẻ, an toàn và gần gũi.</p>
+        </div>
       </div>
-      <div class="service-box">
-        <h3>Vệ sinh văn phòng</h3>
-        <p>Lau kính, hút bụi, vệ sinh thiết bị văn phòng, giữ không gian làm việc luôn gọn gàng, sạch sẽ.</p>
-      </div>
-      <div class="service-box">
-        <h3>Vệ sinh định kỳ và sau xây dựng</h3>
-        <p>Dọn dẹp tổng thể cho công trình mới hoàn thiện, hoặc vệ sinh định kỳ cho cơ sở, công ty, chung cư.</p>
-      </div>
-    </section>
-    <section id="lienhe" class="contact">
-      <h2>Liên hệ</h2>
-      <p><strong>Địa chỉ:</strong> 252 Mã Lò, Phường Bình Trị Đông A, Quận Bình Tân, Tp. HCM</p>
-      <p><strong>Điện thoại:</strong> 0975 397 899</p>
-      <p><strong>Email:</strong> phongkinhdoanh1.gpc@gmail.com</p>
-      <a href="mailto:yourmail@example.com" class="button">Gửi email cho chúng tôi</a>
-    </section>
-  </div>
-  <footer>
-    <p>&copy; 2025 Công ty TNHH Thái Bình Thịnh Vượng. All rights reserved.</p>
+    </div>
+  </section>
+
+  <!-- Liên hệ -->
+  <section id="lienhe" class="max-w-5xl mx-auto py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Liên hệ với chúng tôi</h2>
+    <form class="space-y-4 max-w-xl mx-auto">
+      <input type="text" placeholder="Họ tên" class="w-full p-3 border border-gray-300 rounded">
+      <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded">
+      <textarea rows="4" placeholder="Nội dung" class="w-full p-3 border border-gray-300 rounded"></textarea>
+      <button class="bg-green-700 text-white px-6 py-3 rounded hover:bg-green-600">Gửi liên hệ</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center py-4">
+    &copy; 2025 vscnGPC. All rights reserved.
   </footer>
 </body>
 </html>
