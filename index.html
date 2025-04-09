@@ -26,7 +26,41 @@
       <p class="text-lg md:text-xl">Dành cho người lớn tuổi và gia đình bận rộn</p>
     </div>
   </section>
+<body><style>
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 1rem 0;
+    border-radius: 12px;
+  }
 
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .video-caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+</style>
+
+<div class="video-container">
+  <video controls poster="thumbnail.jpg">
+    <source src="IMG_6424.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+</div>
+<div class="video-caption">Tất niên công ty 2024</div></body>
   <!-- Giới thiệu -->
   <section id="gioithieu" class="max-w-5xl mx-auto py-12 px-4">
     <h2 class="text-3xl font-bold text-center mb-8">Về chúng tôi</h2>
